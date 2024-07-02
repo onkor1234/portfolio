@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+</head>
+<body>
+    <div class="container">
+        <div id="action-bt">
+            <div id="main-action" class="main-bt">
+                <button id="cross-w">  
+                    <span id="cross"></span>
+                </button>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <h1 class="welcome">Welcome to Web Portfolio</h1>
+            <h1 class="name">Onkor Nayong</h1>
+            <h5 style="color: white;">Here, you'll discover exclusive works and creative insights.</h5>
+            <button onclick="scrollsection('section2')" class="EFBT123">About Me</button>   
+           
+        </div>
+        <div class="section section2" id="section2">
+                        <div class="w3-container">
+                <div class="main-at">
+                    <div class="about-text font2h">
+                        <h2 class="sst">ABOUT ME</h2>
+                    </div>
+                    <div class="at-image" id="flex-iig">
+                        <div class="pofile">
+                            <div class="img">
+                                <div class="img-1"></div>
+                                <h2 class="img-in" id="img-in">Onkor Nayong</h2>
+                            </div>
+                            <div class="social">
+                                
+                                <a href="https://www.facebook.com/onkor.nayong" target="_blank" class="facebook">
+                                    <div class="fb-circle">
+                                        <div class="fb-child"></div>
+                                        <div class="fb-child2"></div>
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/onkor.nayong" target="_blank" class="line"></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story-text">
+                                <h2>👋 Hi there! I'm Onkor Nayong</h2>
+                                <h3>I'm 18-year-old aspiring programmer with a passion for innovation. My goal? : To master programming languages and create impactful solutions to real-world problems. I thrive on learning new skills and collaborating with fellow enthusiasts. Let's connect and code the future together!</h3>
+                                <div class="download">
+                                    <button class="EFBT123" onclick="downloadCV()">Download Cv</button>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myskill">
+                    <div class="myskill-text font2h">
+                        <h2 class="sst">MY SKILLS</h2>
+                    </div>
+                    <div class="main-tap-skill">
+                        <div class="bt-skill">
+                            <button onclick="onClick('Technical')" class="button active">Programming Skills</button>
+                            <button onclick="onClick('Tool')" class="button" id="tools">Tools</button>
+                            <button onclick="onClick('Another')" class="button">Other Skills</button>
+                        </div>
+                        <div class="skill-detail">
+                            <div class="hidedetail" id="Technical">
+                                <div class="mainbox">
+                                    <div class="box1">
+                                        <i class="fab fa-python language-icon" style="font-size: 60px;"></i>
+                                        <h3 style="color: white;">Python</h3>
+                                    </div>
+                                    <div class="box1">
+                                        <i class="fab fa-js language-icon" style="font-size:60px;"></i>
+                                        <h3 style="color: white;">JavaScript</h3>
+                                    </div>
+                                    <div class="box1">
+                                        <i class="fa fa-html5" style="font-size:60px;"></i>
+                                        <h3 style="color: white;">HTML5</h3>
+                                    </div>
+                                    <div class="box1">
+                                        <i class="fab fa-css3-alt language-icon" style="font-size:60px;"></i>
+                                        <h3 style="color: white;">CSS</h3>
+                                    </div>
+                                    <div class="box1">
+                                        <i class="fas fa-code language-icon" style="font-size:60px;"></i>
+                                        <h3 style="color: white;">C++</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidedetail" id="Tool" style="display: none;">
+                                <div class="mainbox2">
+                                    <div class="box">
+                                        <h3 style="color: white;">Visual Studio Code</h3>
+                                    </div>
+                                    <div class="box">
+                                        <h3 style="color: white;">Git</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidedetail" id="Another" style="display: none;">
+                                <div class="mainbox3">
+                                    <div class="box3">
+                                        <img src="4.png" alt="">
+                                        <h3 style="color: white;">Photoshop</h3>
+                                    </div>
+                                    <div class="box3">
+                                        <img src="illust.jpeg" alt="">
+                                        <h3 style="color: white;">Illustrator</h3>
+                                    </div>
+                                    <div class="box3">
+                                        <img src="sketchup.png" alt="">
+                                        <h3 style="color: white;">Sketchup</h3>
+                                    </div>
+                                    <div class="box3">
+                                        <img src="ซ่อม.png" alt="">
+                                        <h3 style="color: white;">Maintenance</h3>
+                                    </div>
+                                    <div class="box3">
+                                        <img src="IT-Support-ikon.png" alt="">
+                                        <h3 style="color: white;">IT Support</h3>
+                                    </div>
+                                    <div class="box3">
+                                        <img src="office.png" alt="">
+                                        <h3 style="color: white;">Ms Office</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="section" id="section3">
+            <div class="w3-container">
+                <div class="main-at">
+                    <div class="about-text font2h" style="margin-bottom: 20px;">
+                    <h2 class="sst">Achievements</h2>
+                </div>
+            </div>
+                <div class="img-certificate">
+                    <div class="topic-op">
+                        <h2 class="cooperrative">Cooperative Education Award</h2>
+                    </div>
+                    <div class="aword">
+                        <img class="award" src="อวอท2.png" alt="Aword">
+                        <div class="slide">
+                            <img class="s-child" src="28038.jpg">
+                            <img class="s-child" src="IMG_9350.JPG">
+                            <img class="s-child" src="IMG_9359.JPG">
+                        </div>
+                    </div>
+                        <div class="moointer-details">
+                            <h3>ได้รับโล่รางวัล <span style="text-shadow: 0px 0px 5px rgb(255, 0, 0); font-size: min(max(10px, 3vw), 1.5rem);">"นักศึกษาดีเด่น"</span> ปี 2023</h3>
+                            <p>ณ บริษัท เอ็ม เอส พี อินเตอร์ฟู้ดส์ จำกัด<br>(เกณฑ์การคัดเลือกจากนักศึกษาทั้งหมด 106 คน)<br>-อัตราการมาทำงาน 100% <br>-ให้ความรวมมือในการทำงานดี<br>-มีความกระตือรือรันในการทำงาน<br>-มีมนุษย์สัมพันธ์ที่ดี<br>-แต่งกายเรียบร้อย<br>( ได้โอกาสฝึกงาน 3 แผนก: It Support, Graphic Design, ช่างซ่อมบำรุง )</p>
+                        </div>แต่งกายเรียบร้อย
+                        <div class="topic-op">
+                            <h2 class="cooperrative">Certificates</h2>
+                        </div>
+                        <div class="bompor">
+                            <div class="bompor2">
+                                <img class="s-child" src="bompor1.jpg">
+                                <img class="s-child" src="bompor2.jpg">
+                                <img class="s-child" src="bompor3.jpg">
+                            </div>
+                        </div>
+                        <div class="moointer-details">
+                            <h3>ได้รับรางวัล <span style="text-shadow: 0px 0px 5px rgb(255, 0, 0); font-size: min(max(10px, 3vw), 1.5rem);">"ศูนย์บ่มเพาะ"</span> ระดับชาติ</h3>
+                            <p>การประเมินผลงานการดำเนินงานศูนย์บ่มเพาะผู้ประกอบการอาชีวศึกษาเอกชน
+                                ประจำปีการศึกษา2565<br>ได้รับรางวัลระดับ 4<br>เหรียญทองระดับภาค<br>( รับหน้าที่เป็นฝ่ายออกแบบกราฟฟิก )</p>
+                        </div>
+                            <div class="cr1">
+                                <div class="ac-img">
+                                    <img class="ac-award" src="อ่อนเคอ-ระบบปฎิบัติการ.jpg">
+                                </div>
+                            <div class="text-cc">
+                                <h3>🏅เกียรติบัตร <span style="text-shadow: 0px 0px 5px rgb(255, 0, 0); font-size: min(max(10px, 3vw), 1.5rem);">"เหรียญทอง"</span> ระดับ ปวช.🏆</h3>
+                                <p>การแข่งขันทักษะวิชาชีพ การประกวดนวัฒกรรมสิ่งประดิษฐ์และกีฬา สถานศึกษาเอกชน ประจำปีการศึกษา 2566 วิชา <span style="text-decoration: underline;">ทักษะระบบปฏิบัติการคอมพิวเตอร์เบื้องต้น</span> โดย  สำนักงานคณะกรรมการอาชีวศึกษา กระทรวงศึกษาธิการ  และ สมาคมวิทยาลัยเทคโนโลยีและอาชีวศึกษาเอกชนแห่ง ประเทศไทย</p>
+                            </div>
+                            </div>
+                            <div class="cr1">
+                                <div class="ac-img">
+                                    <img class="ac-award" src="อ่อนเคอ-ระบบปฎิบัติการ.jpg">
+                                </div>
+                            <div class="text-cc">
+                                <h3>🏅เกียรติบัตร <span style="text-shadow: 0px 0px 5px rgb(255, 0, 0); font-size: min(max(10px, 3vw), 1.5rem);">"เหรียญทอง"</span> ระดับ ปวช.🏆</h3>
+                                <p>การแข่งขันทักษะวิชาชีพ การประกวดนวัฒกรรมสิ่งประดิษฐ์และกีฬา สถานศึกษาเอกชน ประจำปีการศึกษา 2567 วิชา <span style="text-decoration: underline;">ทักษะเขียนโปรแกรมคอมพิมเตอร์</span> โดย  สำนักงานคณะกรรมการอาชีวศึกษา กระทรวงศึกษาธิการ  และ สมาคมวิทยาลัยเทคโนโลยีและอาชีวศึกษาเอกชนแห่ง ประเทศไทย</p>
+                            </div>
+                            </div>
+                </div>
+             </div>  
+        </div>
+        <div class="section" id="section4">
+                
+            <div class="w3-container">
+                <div class="main-at">
+                    <div class="about-text font2h">
+                    <h2 class="sst">Activities</h2>
+                </div>
+              </div>
+              <div class="img-certificate">
+              <div class="bompor">
+                <div class="bompor2">
+                    <img class="s-child" src="bompor-otop1.jpg">
+                    <img class="s-child" src="bompor-otop2.jpg">
+                    <img class="s-child" src="bompor-otop3.jpg">
+                </div>
+            </div>
+            <div class="moointer-details">
+                <h3>ตั้งบูธในงาน <span style="text-shadow: 0px 0px 5px rgb(255, 0, 0); font-size: min(max(10px, 3vw), 1.5rem);">"วันเกษตรและของดีตำบลศรีบัวบาน"</span></h3>
+                <p>วันที่ 20 ธันวาคม 2565 ท่านสันติธร ยิ้มละมัย ผู้ว่าราชการจังหวัดลำพูน ให้เกียรติเข้าชมบูธ ศูนย์บ่มเพาะผู้ประกอบการวิทยาลัยเทคโนโลยีชรินรัตน์ลำพูน โดยนายวาฑิต พุทธปวน ผู้อำนวยการวิทยาลัย และนักเรียนคณะดำเนินงานศูนย์บ่มเพาะฯ ให้การต้อนรับและนำเสนอผลงานกระเป๋าผ้าลดโลกร้อน ในงาน วันเกษตรและของดีตำบลศรีบัวบาน<br>( รับหน้าที่เป็นฝ่ายออกแบบกราฟฟิก )</p>
+            </div>
+             </div>  
+              <div class="img-certificate">
+              <div class="bompor">
+                <div class="bompor3">
+                    <img class="s-child" src="vote-ctc3.jpg">
+                    <img class="s-child" src="vote-ctc2.jpg">
+                    <img class="s-child" src="vote-ctc.jpg">
+                </div>
+            </div>
+            <div class="moointer-details">
+                <h3>เข้าร่วมกิจกรรมเลือกตั้ง <span style="text-shadow: 0px 0px 5px rgb(255, 0, 0); font-size: min(max(10px, 3vw), 1.5rem);">"ประธานนักเรียน"</span></h3>
+                <p>เลือกตั้งประธานนักเรียน โดยจะมีเจ้าหน้าที่จากสำนักงานคณะกรรมการการเลือกตั้งจังหวัดลำพูน นำเครื่องลงคะแนนแบบอิเล็กทรอนิกส์มาใช้ในการลงคะแนนการเลือกตั้งประธานนักเรียน</p>
+            </div>
+             </div>  
+            </div>
+        </div>
+        
+    </div>
+<!--
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <footer style="color: red;">Coppyright By On 2023</footer>
+    </div>
+    
+-->
+    <script>
+        var NUMBER_OF_STARS = 200;
+
+var addPulse = function( element ){
+  var pulseTime = Math.random() * 6000;
+  setTimeout( function(  ){
+    element.className += ' pulse';
+  }, pulseTime );
+}
+
+for( var jess = 0; jess < NUMBER_OF_STARS; jess++ ) {
+    var aStar = document.createElement('div');
+		aStar.className='star';
+  
+  	var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+  
+  	var x = Math.random( ) * windowWidth;
+  	aStar.style.left = x + 'px';
+  	document.body.appendChild( aStar );
+  
+  	var y = Math.random( ) * windowHeight;
+  	aStar.style.top = y + 'px';
+  
+    addPulse( aStar );
+  	
+}
+
+window.addEventListener('scroll', function() {
+  var section = document.getElementById('section3');
+  var nextSection = document.getElementById('section4'); // Assuming the ID of the next section is 'section4'
+  var rect = section.getBoundingClientRect();
+  var nextRect = nextSection.getBoundingClientRect();
+  var scrollPosition = window.scrollY || window.pageYOffset;
+
+  var sectionBottom = rect.top + section.offsetHeight;
+  
+  // Check if the bottom of the section is reached
+  if (scrollPosition >= sectionBottom) {
+    var rotationAngle = 0; // Rotate to 0deg if next section is reached
+  } else {
+    var scrollPercentage = (scrollPosition / (document.documentElement.scrollHeight - window.innerHeight));
+    var rotationAngle = -45 + (45 * (scrollPercentage / 45)); // Rotate from 45deg to 0deg
+  }
+
+  document.querySelector('#section3 .img-certificate .aword img').style.transform = 'rotateZ(' + rotationAngle + 'deg)';
+});
+
+
+     function scrollsection(sectionId){
+        let section = document.getElementById(sectionId);
+        section.scrollIntoView({behavior: 'smooth'});
+     }   
+    
+     let focuscolor = document.getElementsByClassName('button');
+
+     for(let focus of focuscolor){
+        focus.addEventListener("click", () =>{
+            Array.from(focuscolor).forEach(btn => btn.classList.remove('active'));
+
+            focus.classList.add('active');
+        })
+     }
+
+     function onClick(skillID){
+        let i;
+        let x = document.getElementsByClassName('hidedetail');
+
+        for (i = 0; i<x.length; i++){
+            x[i].style.display='none';
+
+            document.getElementById(skillID).style.display='block';
+     }
+
+    }
+
+    function downloadCV() {
+    // Replace 'python.svg' with the actual filename and extension
+    var filename = 'python.svg';
+    
+    // Create a new anchor element
+    var element = document.createElement('a');
+    
+    // Set the href attribute to the location of the file
+    element.setAttribute('href', '/Project/Webport/' + filename);
+    
+    // Set the download attribute to specify the filename for the download
+    element.setAttribute('download', filename);
+  
+    // Make the element hidden
+    element.style.display = 'none';
+    
+    // Append the element to the document body
+    document.body.appendChild(element);
+  
+    // Simulate a click event on the element to trigger the download
+    element.click();
+  
+    // Remove the element from the document body
+    document.body.removeChild(element);
+}
+
+
+    </script>
+</body>
+</html>

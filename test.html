@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .name{
+    background: url(abstract-background.jpg) 0 0 / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-wrap: nowrap;
+}
+.color{
+    color: red;
+}
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        max-width: 400px;
+        width: 100%;
+        background-color: #e0e0e0;
+        padding: 20px;
+        border-radius: 20px;
+        
+    } 
+    input:focus{
+        outline: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1>
+        สิ่งที่ user สนใจ
+    </h1>
+ <div id="container" style="border: 2px solid #000000; display: none;">
+
+ </div>
+<div class="form">
+ <input type="text" name="firstname" placeholder="firstname">
+ <input type="text" name="lastname" placeholder="lastname">
+ <input type="number" name="age" min="0" max="60" placeholder="age">
+ <div class="gender">
+ <input type="radio" name="gender" value="ชาย"> ชาย
+ <input type="radio" name="gender" value="หญิง"> หญิง
+ <input type="radio" name="gender" value="ไม่ระบุ"> ไม่ระบุ
+ </div>
+ <div class="interest">
+    <input type="checkbox" name="interest" value="กีฬา"> กีฬา
+    <input type="checkbox" name="interest" value="ดนตรี"> ดนตรี
+    <input type="checkbox" name="interest" value="อ่านหนังสือ"> อ่านหนังสือ
+ </div>
+ 
+
+
+  <button onclick="interestUser()">sent</button>
+</div>
+
+</div>
+    <script>
+      function interestUser() {
+        let firstnameDOM = document.querySelector('input[name=firstname]')
+        let lastnameDOM= document.querySelector('input[name=lastname]')
+        let ageDOM= document.querySelector('input[name=age]')
+        let genderDOM= document.querySelector('input[name=gender]')
+        let interstInputs = document.querySelectorAll('input[name=interest]')
+        let containerDOM = '<ul>'
+        let interest =''
+
+        for (let i = 0; i<interstInputs.length; i++) {
+                interest += interstInputs[i].value
+                if (i != interstInputs.length - 1) {
+                    interest += ','
+                }
+                if (interstInputs[i].checked) {
+                    containerDOM += '<li>' + interstInputs[i].value + '</li>'
+                }
+        }
+
+        let userData = 
+        {
+            firstname: firstnameDOM.value,
+            lastname: lastnameDOM.value,
+            age: ageDOM.value,
+            gender: genderDOM.value,
+            interest: interest
+
+        }
+
+        
+
+        containerDOM += '</ul>'
+
+        console.log(containerDOM)
+        console.log(userData)
+        
+        document.getElementById('container').innerHTML = containerDOM
+        document.getElementById('container').style.display= 'block'
+        
+      }
+    </script>
+</body>
+</html> 
